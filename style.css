@@ -19,14 +19,21 @@ h1 {
 }
 
 /* design ing navingation part*/
+#stick{
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
 .nav_bar {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   min-height: 70px;
   margin: 0px 5px;
-  background-color: var(--pure_white);
+  background-color: rgb(226, 223, 218);
+  border-radius: 0px 0px 5px 5px;
 
   .nav-link {
     display: flex;
@@ -42,15 +49,15 @@ h1 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-   
-  a{
-  text-decoration: none;
-  li {
-    font-size: 1.7rem;
-    font-weight: 600;
-    color: rgb(51, 51, 51);
+
+  a {
+    text-decoration: none;
+    li {
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: rgb(51, 51, 51);
+    }
   }
-}
 }
 
 @media (max-width: 768px) {
@@ -81,11 +88,10 @@ h1 {
     margin: 5px;
   }
 
-
   .totconshape {
     display: flex;
     justify-content: center;
-    
+
     align-items: center;
     flex-wrap: wrap;
     margin: 10px;
@@ -99,7 +105,6 @@ h1 {
   .details p {
     font-size: 2rem;
     margin-bottom: 0.3em;
-    
   }
 
   .details div {
@@ -123,11 +128,11 @@ h1 {
     align-items: center;
     width: 9.5rem;
     height: 40px;
-   transition: transform .7s;
+    transition: transform 0.7s;
   }
-  a:hover{
-      transform: scale(1.1);
-    }
+  a:hover {
+    transform: scale(1.1);
+  }
 
   /*profile image*/
   .prof-image {
@@ -172,11 +177,6 @@ h1 {
 
 .aboutme {
   min-height: 60vh;
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
 
   h3 {
     color: black;
@@ -257,29 +257,24 @@ h1 {
   }
 }
 
-
-
-
-.recent-preoject{
- 
-
-  .project{
-    h2{
+.recent-preoject {
+  .project {
+    h2 {
       color: #000000;
       font-weight: 700;
       font-size: 2rem;
       margin-bottom: 12px;
     }
-    p{
+    p {
       color: #333333;
       font-size: 1.5rem;
     }
 
-    .tags{
-      span{
-       display: inline-flex;
-       height: 30px;
-       width: 100px;
+    .tags {
+      span {
+        display: inline-flex;
+        height: 30px;
+        width: 100px;
         color: #312e2e;
         background-color: #c4b4cf;
         margin: 5px;
@@ -287,69 +282,73 @@ h1 {
         justify-content: center;
         align-items: center;
         font-weight: 600;
-       
-       
       }
-
-
-  
     }
-        margin: 5px;
-         background-color:rgb(233, 225, 225);
-       border-radius: 15px;
-       padding: 10px;
+    margin: 5px;
+    background-color: rgb(233, 225, 225);
+    border-radius: 15px;
+    padding: 10px;
   }
-
 }
 
-.all-project{
+.all-project {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px
-  ;
+  gap: 20px;
   text-align: center;
-
 }
 
-
-.lets-connect{
-  .way{
+.lets-connect {
+  .way {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
-    a{
+    a {
       text-decoration: none;
-       
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 10px;
-       min-height: 100px;
-       min-width: 150px;
-        background-color: #ece8e8;
-        border-radius: 20px;
-        color: #333333;
-       font-size: 1.5rem;
-       font-weight: 600;
-        transition: transform .5s linear;
-    }
-  a:hover{
-  transform: translateY(-8px);
-  color: #df5858;
-}
 
-    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      min-height: 100px;
+      min-width: 150px;
+      background-color: #ece8e8;
+      border-radius: 20px;
+      color: #333333;
+      font-size: 1.5rem;
+      font-weight: 600;
+      transition: transform 0.5s linear;
+    }
+    a:hover {
+      transform: translateY(-8px);
+      color: #df5858;
+    }
   }
 }
 
-
-footer{
+footer {
   background-color: #1e293b;
-  height:15vh;
-   font-size: 1.5rem;
+  height: 15vh;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+@media (max-width:700px) {
+  .lets-connect .way{
+      flex-direction: column;
+  }
+  .all-project{
+    grid-template-columns: 1fr;
+  }
+  .Technical-skills .content{
+    grid-template-columns: 1fr;
+  }
+  .aboutme .content{
+    grid-template-columns: 1fr;
+  }
 }
