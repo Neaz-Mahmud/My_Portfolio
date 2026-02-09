@@ -1,53 +1,171 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
+    <!--Header section-->
     <header>
       <div class="nav_bar">
         <span class="nav-head"><h2>MY Portfolio</h2></span>
 
         <ul class="nav-link">
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Project</li>
-          <li>Conatct</li>
+          <a href="#"> <li>Home</li></a>
+          <a href="#porichoy"> <li>About</li></a>
+          <a href="#Technical-skills"> <li>Skills</li></a>
+          <a href="#recent-preoject"> <li>Project</li></a>
+          <a href="#lets-connect"> <li>Conatct</li></a>
         </ul>
       </div>
     </header>
 
     <main>
-      <section class="porichoy">
-           
-         <div class="image">
+      <!--porichoy section-->
+      <section id="porichoy" class="porichoy">
+        <div class="totconshape">
+          <div class="prof-image">
+            <div class="rolling"></div>
 
-           
-         </div>
+            <img class="my-prof-image" src="imgaes/my_image.jpg" alt="" />
+          </div>
+
+          <div class="content">
+            <h1>Hi, I`m Istiak Hasan Neaz Mahmud</h1>
+            <div class="details">
+              <p class="">Computer Science Student & Competitive Programmer</p>
+
+              <div>Final Year Student based in Rajshahi,Bangladesh</div>
+            </div>
+
+            <div class="online-prof">
+              <a target="_blank" href="https://codeforces.com/contests"
+                >Codeforce</a
+              >
+              <a target="_blank" href="https://github.com/">Github</a>
+
+              <a href="#recent-preoject">View Project</a>
+              <a href="#lets-connect">Conatct me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="aboutme">
+        <h1>ABOUT ME</h1>
 
         <div class="content">
-          <h1>Hi, I`m Istiak Hasan Neaz Mahmud</h1>
-          <div class="details">
-            <p class="">Computer Science Student & Competitive Programmer</p>
+          <div class="details-text">
+            <p>
+              I am a Computer Science & Engineering student in my final
+              semester. My journey bridges the gap between algorithmic problem
+              solving and practical software development. With a Codeforces
+              rating of 1400 (Specialist), I specialize in graph theory, data
+              structures, and algorithms. Beyond coding, I mentor university
+              juniors in C programming.
+            </p>
+          </div>
 
-            <div>Final Year Student based in Rajshahi,Bangladesh</div>
+          <div class="allcard">
+            <div class="card">
+              <div class="tp"></div>
+              <h3>1400</h3>
+              <p>Codeforces Ratinig</p>
+            </div>
+            <div class="card">
+              <h3>1400</h3>
+              <p>Codeforces Ratinig</p>
+            </div>
+            <div class="card">
+              <h3>1400</h3>
+              <p>Codeforces Ratinig</p>
+            </div>
           </div>
-           
-          <div class="online-prof">
-            <a href="">Codeforce</a>
-            <a href="">Github</a>
-            <a href="">View Project</a>
-            <a href="">Conatct me</a>
+        </div>
+      </section>
+
+      <section id="Technical-skills" class="Technical-skills">
+        <h1>Technical Skills</h1>
+
+        <div class="content">
+          <ul>
+            <h2>Competitive Coding</h2>
+            <li>C / C++</li>
+            <li>Graph Theory & BFS/DFS</li>
+            <li>Data Structures (Trees, MST)</li>
+            <li>Dynamic Programming</li>
+          </ul>
+
+          <ul>
+            <h2>Web Stack</h2>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React (Current Focus)</li>
+            <li>Go (Golang) & PostgreSQL</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="recent-preoject" class="recent-preoject">
+        <h1>Recent Projects</h1>
+
+        <div class="all-project">
+          <div class="project">
+            <h2>UniStack / VarsiDeck</h2>
+            <p>
+              A web platform for university students to share academic
+              materials. Features panels for Teachers, CRs, and Students.
+            </p>
+            <div class="tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+            </div>
           </div>
-           
+
+          <div class="project">
+            <h2>UniStack / VarsiDeck</h2>
+            <p>
+              A web platform for university students to share academic
+              materials. Features panels for Teachers, CRs, and Students.
+            </p>
+            <div class="tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section id="lets-connect" class="lets-connect">
+        <h1>Let's Connect</h1>
+
+        <div class="way">
+          <a href="istiakhasan239@gmail.com" target="_blank">
+            <span class="material-symbols-outlined"> mail </span>
+            <span>Email Me</span>
+          </a>
+
+          <a target="_blank" href="https://codeforces.com/contests">
+            <span class="material-symbols-outlined"> code_blocks </span>
+            <span>Codeforces</span>
+          </a>
+
+          <a target="_blank" href="https://github.com/">
+            <span class="material-symbols-outlined"> commit </span>
+            <span>Github</span>
+          </a>
+        </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>© 2026 <strong>Neaz</strong> . Built with raw HTML & CSS.</p>
+    </footer>
   </body>
 </html>
